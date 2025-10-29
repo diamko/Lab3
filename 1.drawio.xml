@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DatabaseSchema name="Автосалон">
+    
+    <Table name="Марка">
+        <Columns>
+            <Column name="МаркаID" type="INTEGER" primaryKey="true" nullable="false"/>
+            <Column name="Название" type="VARCHAR(50)" nullable="false" unique="true"/>
+        </Columns>
+    </Table>
+
+    <Table name="Модель">
+        <Columns>
+            <Column name="МодельID" type="INTEGER" primaryKey="true" nullable="false"/>
+            <Column name="МаркаID" type="INTEGER" nullable="false"/>
+            <Column name="Название" type="VARCHAR(100)" nullable="false"/>
+        </Columns>
+        <ForeignKeys>
+            <ForeignKey column="МаркаID" references="Марка(МаркаID)" onDelete="CASCADE"/>
+        </ForeignKeys>
+    </Table>
+
+    <Table name="Машина">
+        <Columns>
+            <Column name="VIN" type="VARCHAR(17)" primaryKey="true" nullable="false"/>
+            <Column name="МодельID" type="INTEGER" nullable="false"/>
+            <Column name="Лицензия" type="VARCHAR(20)" unique="true"/>
+            <Column name="Год" type="INTEGER" nullable="false"/>
+            <Column name="Цвет" type="VARCHAR(30)" nullable="false"/>
+            <Column name="Цена" type="DECIMAL(12,2)" nullable="false"/>
+        </Columns>
+        <ForeignKeys>
+            <ForeignKey column="МодельID" references="Модель(МодельID)" onDelete="CASCADE"/>
+        </ForeignKeys>
+    </Table>
+
+    <Table name="Клиент">
+        <Columns>
+            <Column name="КлиентID" type="INTEGER" primaryKey="true" nullable="false"/>
+            <Column name="ФИО" type="VARCHAR(150)" nullable="false"/>
+            <Column name="Почта" type="VARCHAR(100)" unique="true"/>
+            <Column name="Телефон" type="VARCHAR(20)" nullable="false"/>
+        </Columns>
+    </Table>
+
+    <Table name="Продавец">
+        <Columns>
+            <Column name="ПродавецID" type="INTEGER" primaryKey="true" nullable="false"/>
+            <Column name="ИмяПродавца" type="VARCHAR(50)" nullable="false"/>
+            <Column name="ФамилияПродавца" type="VARCHAR(50)" nullable="false"/>
+            <Column name="ПочтаПродавца" type="VARCHAR(100)" unique="true"/>
+            <Column name="Телефон" type="VARCHAR(20)" nullable="false"/>
+        </Columns>
+    </Table>
+
+    <Table name="Сделка">
+        <Columns>
+            <Column name="НомерСделки" type="INTEGER" primaryKey="true" nullable="false"/>
+            <Column name="МашинаID" type="VARCHAR(17)" nullable="false" unique="true"/>
+            <Column name="КлиентID" type="INTEGER" nullable="false"/>
+            <Column name="ПродавецID" type="INTEGER" nullable="false"/>
+        </Columns>
+        <ForeignKeys>
+            <ForeignKey column="МашинаID" references="Машина(VIN)" onDelete="CASCADE"/>
+            <ForeignKey column="КлиентID" references="Клиент(КлиентID)" onDelete="CASCADE"/>
+            <ForeignKey column="ПродавецID" references="Продавец(ПродавецID)" onDelete="CASCADE"/>
+        </ForeignKeys>
+    </Table>
+
+    <Table name="Оплата">
+        <Columns>
+            <Column name="ОплатаID" type="INTEGER" primaryKey="true" nullable="false"/>
+            <Column name="НомерСделки" type="INTEGER" nullable="false"/>
+            <Column name="ДатаПлатежа" type="DATE" nullable="false"/>
+            <Column name="Сумма" type="DECIMAL(12,2)" nullable="false"/>
+            <Column name="СпособОплаты" type="VARCHAR(50)" nullable="false"/>
+        </Columns>
+        <ForeignKeys>
+            <ForeignKey column="НомерСделки" references="Сделка(НомерСделки)" onDelete="CASCADE"/>
+        </ForeignKeys>
+    </Table>
+
+</DatabaseSchema>
