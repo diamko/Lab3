@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0" version="28.2.9">
   <diagram id="0qY68NWdjaxSENyNhOfW" name="Page-1">
-    <mxGraphModel dx="2668" dy="2423" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1685" dy="1936" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,10 +17,10 @@
           <mxGeometry x="442" y="-485" width="140" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VyXQ2-qYqSUSmuGOm_1G-6" value="&amp;lt;&amp;lt;service&amp;gt;&amp;gt;&lt;div&gt;board_dialog.py&lt;/div&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="7" y="-753" width="185" height="50" as="geometry" />
+          <mxGeometry x="7" y="-802" width="185" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VyXQ2-qYqSUSmuGOm_1G-7" value="&amp;lt;&amp;lt;service&amp;gt;&amp;gt;&lt;div&gt;project_dialog.py&lt;/div&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="172" y="-680" width="185" height="50" as="geometry" />
+          <mxGeometry x="180" y="-680" width="185" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VyXQ2-qYqSUSmuGOm_1G-8" value="&amp;lt;&amp;lt;service&amp;gt;&amp;gt;&lt;div&gt;support_ticket_dialog.py&lt;/div&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="527" y="-753" width="185" height="50" as="geometry" />
@@ -71,10 +71,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="VyXQ2-qYqSUSmuGOm_1G-18" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="87" y="-510" width="25" height="25" as="geometry" />
+          <mxGeometry x="87" y="-545" width="25" height="25" as="geometry" />
         </mxCell>
         <mxCell id="VyXQ2-qYqSUSmuGOm_1G-19" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="254" y="-560" width="25" height="25" as="geometry" />
+          <mxGeometry x="260" y="-560" width="25" height="25" as="geometry" />
         </mxCell>
         <mxCell id="VyXQ2-qYqSUSmuGOm_1G-20" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="494" y="-560" width="25" height="25" as="geometry" />
@@ -185,7 +185,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="VyXQ2-qYqSUSmuGOm_1G-41" value="IDatabaseService" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="208" y="-610" width="115" height="30" as="geometry" />
+          <mxGeometry x="215" y="-611" width="115" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VyXQ2-qYqSUSmuGOm_1G-42" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="VyXQ2-qYqSUSmuGOm_1G-18" target="VyXQ2-qYqSUSmuGOm_1G-43">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -194,7 +194,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="VyXQ2-qYqSUSmuGOm_1G-43" value="IDatabaseService" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="41" y="-556" width="115" height="30" as="geometry" />
+          <mxGeometry x="41" y="-670" width="115" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
