@@ -5055,7 +5055,7 @@
         <mxCell id="s7APrah-moUKvRGfI4yC-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" value="&lt;h3&gt;&lt;span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Производственный процесс&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;" vertex="1">
           <mxGeometry height="80" width="130" x="1680" y="1042.5" as="geometry" />
         </mxCell>
-        <mxCell id="s7APrah-moUKvRGfI4yC-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" value="&lt;h3&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Регистрация операторов&lt;/span&gt;&lt;/h3&gt;" vertex="1">
+        <mxCell id="s7APrah-moUKvRGfI4yC-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" value="&lt;h3&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Регистрация операторов и ввод параметров&lt;/span&gt;&lt;/h3&gt;" vertex="1">
           <mxGeometry height="80" width="120" x="1320" y="883.5" as="geometry" />
         </mxCell>
         <mxCell id="s7APrah-moUKvRGfI4yC-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" value="&lt;h3&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Управление материальными ресурсами&lt;/span&gt;&lt;/h3&gt;" vertex="1">
